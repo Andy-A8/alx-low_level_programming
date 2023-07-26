@@ -4,14 +4,12 @@
 /**
  * puts_half - Prints half of a string
  * @str: The string to be printed
- *
- * Return: Always 0.
- */
+*/
 void puts_half(char *str)
 {
 	int i = 0, len = 0, n;
 
-	while (str[i])
+	while (str[i++])
 		len++;
 
 	if ((len % 2) == 0)
