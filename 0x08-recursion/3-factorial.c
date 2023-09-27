@@ -3,9 +3,9 @@
 
 /**
  * factorial - Returns the factorial of a given number
- * @n: The number to find the factorioal of
+ * @n: The number to find the factorial of
  *
- * return: The factorial of n if n > 0 or
+ * Return: The factorial of n if n > 0 or
  *	-1 to indicate an error if n < 0.
  */
 int factorial(int n)
