@@ -8,7 +8,7 @@
  * @owner: The owner of the dog.
  *
  * Description: A new type describing a dog.
- */ 
+ */
 
 struct dog
 {
