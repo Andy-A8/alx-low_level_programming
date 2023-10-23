@@ -3,16 +3,17 @@
 
 /**
  * print_listint - Prints all the elements of a listint_t list.
- * @h: The listsint_t list.
+ * @h: The listint_t list.
  *
  * Return: The number of nodes.
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t nodes;
+	size_t nodes = 0;
 
-	for (nodes = 0; h; nodes++)
+	while (h)
 	{
+		nodes++;
 		printf("%d\n", h->n);
 		h = h->next;
 	}
