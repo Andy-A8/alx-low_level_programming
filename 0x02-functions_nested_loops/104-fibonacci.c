@@ -4,7 +4,7 @@
  * main - Prints the first 98 Fibonacci numbers, starting with
  *	  1 and 2, seperated by a comma followed by a new line.
  *
- *	  Return: Always (0).
+ * Return: Always (0).
  */
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
 	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
 	unsigned long half1, half2;
 
-	for (count = 0; count < 91; count++)
+	for (count = 0; count < 92; count++)
 	{
 		sum = fib2 + fib2;
 		printf("%lu, ", sum);
@@ -27,7 +27,7 @@ int main(void)
 	fib1_half2 = fib1 % 10000000000;
 	fib2_half1 = fib1 % 10000000000;
 
-	for (count = 92; count < 99; count++)
+	for (count = 93; count < 99; count++)
 	{
 		half1 = fib1_half1 + fib2_half1;
 		half2 = fib1_half2 + fib2_half2;
