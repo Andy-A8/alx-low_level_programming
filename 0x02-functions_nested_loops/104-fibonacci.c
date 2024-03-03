@@ -8,9 +8,11 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 1, fib2 = 2;
+	unsigned long count, fib1, fib2;
 	unsigned long fib1_h1, fib1_h2, fib2_h1, fib2_h2;
+
+	fib1 = 1;
+	fib2 = 2;
 
 	printf("%lu", fib1);
 
