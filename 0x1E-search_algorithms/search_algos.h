@@ -11,7 +11,7 @@
  * @index: Index of the node in the list
  * @next: Pointer to the next node
  */
-typdef struct listint_s
+typedef struct listint_s
 {
 	int n;
 	size_t index;
@@ -19,12 +19,11 @@ typdef struct listint_s
 } listint_t;
 
 /**
- * struct skiplist_s - Singly linked list with en xpress lane
+ * struct skiplist_s - Singly linked list with express lane
  *
  * @n: Integer
  * @index: Index of the node in the list
  * @next: Pointer to the next node
- * @express: Pointer to the next node in the express lane
  */
 typedef struct skiplist_s
 {
