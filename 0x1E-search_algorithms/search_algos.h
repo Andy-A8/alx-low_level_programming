@@ -24,6 +24,7 @@ typedef struct listint_s
  * @n: Integer
  * @index: Index of the node in the list
  * @next: Pointer to the next node
+ * @express: Pointer to the next node in express lane
  */
 typedef struct skiplist_s
 {
