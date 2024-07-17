@@ -1,6 +1,6 @@
 #include "search_algos.h"
 
-int _binary_search(int *array, int low, int high, int value);
+int _binary_helper(int *array, int low, int high, int value);
 
 /**
  * exponential_search - Searches for a value in a sorted array of integers
@@ -41,11 +41,11 @@ int exponential_search(int *array, size_t size, int value)
 
 	printf("Value found between indexex [%d] and [%d]\n", low, high);
 
-	return (_binary_search(array, low, high, value));
+	return (_binary_helper(array, low, high, value));
 }
 
 /**
- * _binary_search - Performs binary search on the array.
+ * _binary_helper - Performs binary search on the array.
  *
  * @array: A pointer to the sorted subarray of integers.
  * @low: Lowest index of the subarray.
@@ -55,7 +55,7 @@ int exponential_search(int *array, size_t size, int value)
  * Return: The index of where value is first found in the subarray
  *	   Otherwise -1, if value was not found.
  */
-int _binary_search(int *array, int low, int high, int value)
+int _binary_helper(int *array, int low, int high, int value)
 {
 	int i, m;
 
